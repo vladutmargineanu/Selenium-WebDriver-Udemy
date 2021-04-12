@@ -15,7 +15,6 @@ public class StaticDropDown {
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/"); // URL in the browser
 
         // dropdown with select tag
-
         WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 
         Select dropdown = new Select(staticDropdown);
@@ -32,6 +31,5 @@ public class StaticDropDown {
         // select by value
         dropdown.selectByValue("INR");
         System.out.println(dropdown.getFirstSelectedOption().getText());
-
     }
 }
