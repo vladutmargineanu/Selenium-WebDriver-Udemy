@@ -13,16 +13,13 @@ public class FacebookXPath {
         driver.get("https://facebook.com/"); // URL in the browser
 
         // Access by XPath
+        driver.findElement(By.xpath("//*[@id='email']")).sendKeys("xpath");
+        driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("pass");
 
-        //driver.findElement(By.xpath("//*[@id='email']")).sendKeys("xpath");
-        //driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("pass");
-
-        //driver.findElement(By.xpath("//*[@name='login']")).click();
+        driver.findElement(By.xpath("//*[@name='login']")).click();
 
         // Access By CSS
-
         driver.findElement(By.cssSelector("input[id='email']")).sendKeys("css");
         driver.findElement(By.cssSelector("[name='login']")).click();
     }
-
 }
