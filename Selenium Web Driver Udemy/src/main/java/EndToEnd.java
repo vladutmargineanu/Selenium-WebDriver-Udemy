@@ -52,13 +52,13 @@ public class EndToEnd {
 
         System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 
-        // driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click();
+        driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click();
 
         driver.findElement(By.cssSelector("input[value='Search']")).click();
 
-        // driver.findElement(By.xpath("//input[@value='Search']")).click();
+        driver.findElement(By.xpath("//input[@value='Search']")).click();
 
-        // driver.findElement(By.name("ctl00$mainContent$btn_FindFlights")).click();
+        driver.findElement(By.name("ctl00$mainContent$btn_FindFlights")).click();
 
     }
 
