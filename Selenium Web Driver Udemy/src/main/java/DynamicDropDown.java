@@ -12,19 +12,19 @@ public class DynamicDropDown {
         driver.get("https://www.spicejet.com"); // URL in the browser
 
         //By xpath
-        // driver.findElement(By.xpath("//a[value='MAA']"));
-        // driver.findElement(By.xpath("//a[value='BLR']"));
+        driver.findElement(By.xpath("//a[value='MAA']"));
+        driver.findElement(By.xpath("//a[value='BLR']"));
 
         // select from area and then select the country (identify by id => is unique)
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 
         // select the country by xpath
 
-        /*driver.findElement(By.xpath("//a[@value='BLR']")).click();
+        driver.findElement(By.xpath("//a[@value='BLR']")).click();
 
         Thread.sleep(2000L);
 
-        driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();*/
+        driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
 
         // Fara index - parent child relationship
         // Multiple instance with the same id and we dont want to use index
