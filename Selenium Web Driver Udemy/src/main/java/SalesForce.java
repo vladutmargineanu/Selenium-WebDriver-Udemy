@@ -19,7 +19,7 @@ public class SalesForce {
         driver.findElement(By.name("pw")).sendKeys("123456");
 
         // class name - invalid => error (compound classes name not allowed)
-        // driver.findElement(By.className("button r4 wide primary")).click();
+        driver.findElement(By.className("button r4 wide primary")).click();
 
         // Expand double quotes - generate Xpath for log in button
          driver.findElement(By.xpath("//*[@id=\"Login\"]")).click();
